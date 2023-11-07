@@ -50,31 +50,37 @@ i {
 .main-body {
 	top: 0px;
 	padding: 30px;
+	overflow: hidden;
+}
+
+.experience table, .training table, .education table{
+	display: block;
+	width: 100%;
+	overflow-x: scroll;
 }
 
 @media (max-width: 724px) {
 	.main-body {
 		padding-left: 20px;
+
 	}
 }
 
 @media (max-width: 700px) {
 	.main-body {
 		padding-left: 10px;
-	}
+	}	
 }
 
 @media (max-width: 686px) {
 	.main-body {
 		padding: 0px;
-		overflow: scroll;
 	}
 }
 
 @media (max-width: 575px) {
 	.main-body {
-		padding: 10%;
-		overflow: scroll;
+		padding: 0 2.5%;
 	}
 }
 
@@ -99,7 +105,7 @@ i {
 }
 
 .main-body p {
-	font-size: 15px;
+	font-size: 14px;
 	text-align: justify;
 }
 
@@ -131,13 +137,13 @@ i {
 	/* text-align: justify; */
 	width: 20%;
 	height: auto;
-	font-size: 13px;
+	font-size: 14px;
 	cursor: pointer;
 }
 
 .main-body .table tbody tr td a {
 	text-align: justify;
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: bold;
 	color: Green;
 
@@ -173,7 +179,7 @@ i {
 }
 
 .main-body .extra a {
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: bold;
 	color: Green;
 
@@ -220,14 +226,13 @@ i {
 
 .rightside .title h3 {
 	font-weight: Bold;
-	font-size: 1.73rem;
+	font-size: 2rem;
+	margin-bottom: 0;
 }
 
 /*Responsive of H3*/
 @media (max-width: 738px) {
-	.rightside .title h3 {
-		/* font-size: 1.49rem; */
-	}
+
 }
 
 @media (max-width: 660px) {
@@ -236,11 +241,9 @@ i {
 	}
 }
 
-.rightside .title p {}
-
 .rightside .title p,
 a {
-	font-size: 0.97rem;
+	font-size: 1rem;
 	text-decoration: none;
 	color: white;
 }
@@ -312,13 +315,13 @@ a:hover {
 
 @media (max-width: 622px) {
 	.rightside .details ul li a {
-		padding: 13px;
+		padding: 14px;
 	}
 }
 
 @media (max-width: 598px) {
 	.rightside .details ul li a {
-		padding: 12px;
+		padding: 14px;
 	}
 }
 
