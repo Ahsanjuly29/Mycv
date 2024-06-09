@@ -81,13 +81,15 @@
         *,
         ::after,
         ::before {
-            box-sizing: border-box
+            box-sizing: border-box;
+            text-align: justify;
         }
 
         @media print {
             @page {
                 size: A4;
                 margin: 0;
+                padding: 0;
                 -webkit-print-color-adjust: exact;
                 color-adjust: exact;
             }
@@ -12731,6 +12733,10 @@
             padding: 0px !important;
         }
 
+        .top-header {
+            background-color: #a2849e4f;
+        }
+
         .top-header-content {
             padding: 20px;
             padding-bottom: 1px;
@@ -12761,6 +12767,10 @@
 
         .experience h3 {
             margin-top: 5px;
+        }
+
+        .work-experience {
+            margin: 10px;
         }
 
         .caption a,
@@ -12837,14 +12847,12 @@
     </style>
 </head>
 
-<!-- onload="window.print()" -->
-
 <body>
 
     <header style="margin: 0px;"></header>
     <div class="main-body">
         <div class="top-header">
-            <div class="top-header-content" style="background-color: #a2849e4f;">
+            <div class="top-header-content">
                 <div class="row">
                     <div class="col-sm-8">
                         <div class="profile">
@@ -13100,13 +13108,11 @@
                                 <ul>
                                     <li>
                                         Reporting directly to the Software Engineering Team Lead and raising all
-                                        concerns or
-                                        technical issues before developing solutions.
+                                        concerns or technical issues before developing solutions.
                                     </li>
                                     <li>Conducting daily code reviews</li>
                                     <li>
-                                        Coaching and mentoring junior engineers and providing them with support where
-                                        necessary
+                                        mentoring junior engineers and providing them with support where necessary
                                     </li>
                                     <li>
                                         Providing Rest API by Laravel
@@ -13192,9 +13198,13 @@
         </div>
     </div>
 
-    <footer>
+    <footer class="m-1 p-1"></footer>
 
-    </footer>
 </body>
+
+
+<script>
+    // window.print();
+</script>
 
 </html>
