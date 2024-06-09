@@ -93,6 +93,27 @@
                 -webkit-print-color-adjust: exact;
                 color-adjust: exact;
             }
+
+            html,
+            body {
+                height: 99%;
+            }
+
+            header {
+                margin: 0px;
+                position: fixed;
+                top: 0;
+            }
+
+            footer {
+                margin: 0px;
+                position: fixed;
+                bottom: 0;
+            }
+
+            .main-body {
+                position: relative;
+            }
         }
 
         html {
@@ -12725,7 +12746,16 @@
         }
 
         html,
-        body,
+        body {
+            margin: 0;
+            padding: 0;
+            background: #ffffff;
+            font-family: "Nunito Sans", sans-serif;
+            text-transform: capitalize;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
         .main-body {
             width: 800px;
             max-width: 800px;
@@ -12740,14 +12770,12 @@
         .top-header-content {
             padding: 20px;
             padding-bottom: 1px;
-            /* background-color: rgba(0, 0, 255, 0.1); */
-
         }
 
         .education-ul {
             padding-left: 0px;
             margin-bottom: 0px;
-            /* letter-spacing: 0.6px; */
+            letter-spacing: 0.6px;
         }
 
         .education-li {
@@ -12761,8 +12789,6 @@
         .experience {
             padding: 20px;
             padding-top: 0px;
-            /* border: 1px solid rgb(162 132 158 / 100%);
-            border-top: 0px solid rgb(162 132 158 / 100%); */
         }
 
         .experience h3 {
@@ -13103,7 +13129,7 @@
                                         <span class="text-danger">Flight Expert</span>|
                                         City-Center, Motijheel, Dhaka| Apr,2022 - Sept, 2023.</b></p>
                                 <p class="list">
-                                    Responsibilities(OTA & CMS Software Development) :
+                                    Responsibilities(OTA & CMS Software Development):
                                 </p>
                                 <ul>
                                     <li>
