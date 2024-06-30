@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahsan Ahmed</title>
+    <title>CV-Ahsan-Software Engineer</title>
 
     <style>
         @charset "UTF-8";
@@ -88,7 +88,7 @@
         @media print {
             @page {
                 size: A4;
-                margin: 0;
+                margin: 10mm;
                 padding: 0;
                 -webkit-print-color-adjust: exact;
                 color-adjust: exact;
@@ -98,25 +98,28 @@
             body {
                 height: 99%;
             }
-
-            header {
-                margin: 0px;
-                position: fixed;
-                top: 0;
-            }
-
-            footer {
-                margin: 0px;
-                position: fixed;
-                bottom: 0;
-            }
-
-            .main-body {
-                position: relative;
-            }
         }
 
-        html {
+        footer,
+        header {
+            position: fixed;
+            left: 0;
+            right: 0;
+            height: 50px;
+            /* background: rgba(255, 0, 0, 0.199); */
+            display: block;
+            width: 100%;
+        }
+
+        header {
+            top: 0;
+        }
+
+        footer {
+            bottom: 0;
+        }
+
+        */ html {
             font-family: sans-serif;
             -ms-text-size-adjust: 100%;
             -webkit-text-size-adjust: 100%
@@ -139,6 +142,10 @@
             background-color: var(--bs-body-bg);
             -webkit-text-size-adjust: 100%;
             -webkit-tap-highlight-color: transparent
+        }
+
+        .title_name {
+            color: rgb(2 64 8);
         }
 
         hr {
@@ -2581,8 +2588,9 @@
             margin-top: 5%;
             margin-bottom: 20px;
             line-height: 1.42857143;
-            background-color: #fff;
-            border: 1px solid #ddd;
+            background-color: #a2849e4f;
+            background-color: #008d2b52;
+            border: 1px solid rgb(2 64 8);
             border-radius: 4px;
             -webkit-transition: border .2s ease-in-out;
             -o-transition: border .2s ease-in-out;
@@ -12727,7 +12735,8 @@
         a,
         p,
         span {
-            font-size: 11px;
+            font-size: 11.5px;
+            line-height: 1.2rem;
         }
 
         h3 {
@@ -12757,18 +12766,18 @@
         }
 
         .main-body {
-            width: 800px;
+            width: 760px;
             max-width: 800px;
-            margin: 0px auto !important;
+            margin: 0px auto;
             padding: 0px !important;
+            height: 90vh;
+            page-break-inside: avoid;
         }
 
-        .top-header {
-            background-color: #a2849e4f;
-        }
+        .top-header {}
 
         .top-header-content {
-            padding: 20px;
+            padding: 0px;
             padding-bottom: 1px;
         }
 
@@ -12807,16 +12816,16 @@
         .work-experience span,
         .work-experience li,
         .work-experience a {
-            font-size: 12px;
+            font-size: 13px;
         }
 
         .caption h3 {
             margin-top: 0px;
-            color: rgb(162 132 158 / 100%);
+            color: rgb(2 64 8);
         }
 
         .caption p {
-            color: rgb(162 132 158 / 100%);
+            color: rgb(2 64 8);
             font-weight: 800;
             margin: 5px 0px;
         }
@@ -12875,25 +12884,27 @@
 
 <body>
 
-    <header style="margin: 0px;"></header>
-    <div class="main-body">
+    <header>
+        &nbsp;
+    </header>
+    <main class="main-body">
         <div class="top-header">
             <div class="top-header-content">
                 <div class="row">
                     <div class="col-sm-8">
                         <div class="profile">
-                            <h1 style="margin-bottom: 0px; font-size: 60px;">Ahsan Ahmed</h1>
+                            <h1 class="title_name" style="margin-bottom: 0px; font-size: 60px;">Ahsan Ahmed</h1>
                             <h3 style="margin-top: 0px;">
                                 Software Engineer
                             </h3>
                             <p style="margin-bottom: 10px;">
                                 <span style="padding-left: 5px;">
                                     -
-                                </span>Experienced Software Engineer with ~4 years of Experience in developing Quality
-                                Software Solutions. able to work for an encouraging and stable company that will assist
-                                me in
-                                developing, improving, and obtaining the necessary skills in order to be come the best
-                                engineer Possible.
+                                </span>
+                                Software Engineer with(<span id="job_experience_year"></span>)years of
+                                Experience in developing Quality Software Solutions. able to work for an encouraging and
+                                stable company that will assist me in developing, improving, and obtaining the necessary
+                                skills in order to be come the best engineer Possible.
                             </p>
                         </div>
                         <div class="education row">
@@ -13007,7 +13018,8 @@
                                             Cloud Storage(gDrive, AWS, Filezilla, Ftp)
                                         </li>
                                         <li>
-                                            Coding, Debugging, Object Oriented, Eloquent DB handle, Web-based software
+                                            Coding, Debugging, Object Oriented, Eloquent DB handle, Web-based
+                                            software
                                             engineering, Team collaboration
                                         </li>
                                     </ul>
@@ -13034,9 +13046,9 @@
                                         <span class="d-block">
                                             Language : Bangla, English
                                         </span>
-                                        <span class="d-block">
+                                        <!-- <span class="d-block">
                                             <a href="HTTPS://ahsanjuly29.github.io/Mycv">Cv Details</a>
-                                        </span>
+                                        </span> -->
                                     </p>
                                 </div>
                                 <div class="links">
@@ -13054,20 +13066,31 @@
                                         </a>
                                     </p>
                                     <p>
-                                        <a href="https://wa.me/message/O72EJWGZTPEAO1">
-                                            WhatsApp :<span>
-                                                <i class="fas fa-mobile font-weight-bold"></i> +880-1777-51-9553</span>
+                                        WhatsApp :
+                                        <a href="https://wa.me/qr/3GD6BU7EVZL3I1">
+                                            <span>
+                                                <i class="fas fa-mobile font-weight-bold"></i>
+                                                +880-1777-51-9553
+                                            </span>
                                         </a>
                                     </p>
                                     <p>
-                                        Mobile :<span>
-                                            <a href="tel:+8801554012764">
-                                                <i class="fas fa-mobile font-weight-bold"></i> +880-1554-01-2764</span>
+                                        Mobile :
+                                        <a href="tel:+8801554012764">
+                                            <span>
+                                                <i class="fas fa-mobile font-weight-bold"></i>
+                                                +880-1554-01-2764
+                                            </span>
                                         </a>
                                     </p>
                                     <p>
-                                        Address :<span>
-                                            <i class="fas fa-map-marker-alt"></i> Nayabazar, Dhaka-1100</span>
+                                        Address :
+                                        <a href="https://maps.app.goo.gl/fetSeF9sDPWLScg97">
+                                            <span>
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                Nayabazar, Dhaka-1100
+                                            </span>
+                                        </a>
                                     </p>
                                 </div>
                             </div>
@@ -13198,7 +13221,8 @@
                                 </p>
                                 <ul>
                                     <li>
-                                        Working to a schedule designed around these factors and updating the client of
+                                        Working to a schedule designed around these factors and updating the client
+                                        of
                                         any
                                         issues which may cause a delay or any necessary changes.
                                     </li>
@@ -13222,15 +13246,27 @@
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 
-    <footer class="m-1 p-1"></footer>
+    <footer>
+        &nbsp;
+    </footer>
 
 </body>
 
 
 <script>
-    // window.print();
+    function calculateYearDifference() {
+        const currentYear = new Date().getFullYear();
+        const difference = currentYear - 2020;
+        document.getElementById('job_experience_year').innerText = ` ~${difference} `;
+    }
+
+    window.onload = function () {
+        calculateYearDifference();
+    }
+
+    window.print();
 </script>
 
 </html>
