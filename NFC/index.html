@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+  <style>
+    body {
+      background-color: #e8e8e8
+    }
+
+    .no-width {
+      width: inherit
+    }
+
+    #main-content {
+      margin: 0 auto 100px;
+      max-width: 800px
+    }
+
+    .pd-x-0 {
+      padding: 0
+    }
+
+    .body {
+      padding: 0 20px
+    }
+
+    .vcard-header {
+      margin-bottom: 20px;
+      margin-top: 40px;
+      text-align: right
+    }
+
+    .vcard-header h1 {
+      margin-bottom: 0
+    }
+
+    .vcard-header h2 {
+      font-size: 1em;
+      margin-top: 0
+    }
+
+    .vcard-footer {
+      background-color: #666
+    }
+
+    .vcard-footer a.white {
+      color: #fff
+    }
+
+    .col-form-label {
+      font-weight: 600;
+      text-align: right
+    }
+
+    .col-form-label.thin-label {
+      padding: 0 8px
+    }
+
+    .message-block.has-error {
+      margin-top: 5px
+    }
+
+    .message-block.has-error span.help-block {
+      display: block;
+      margin: 0
+    }
+
+    .form-control:focus {
+      box-shadow: none
+    }
+
+    @media (max-width:576px) {
+      .col-form-label {
+        text-align: left
+      }
+    }
+
+    .view-profile-container {
+      margin-bottom: 1rem
+    }
+
+    .view-profile-container .view-profile-main {
+      margin-bottom: 10px
+    }
+
+    .view-profile-container .brand .brand-icon {
+      padding: .25rem .5rem;
+      min-width: 40px
+    }
+
+    .view-profile-container .brand .brand-icon+.brand-icon {
+      margin-left: .5rem
+    }
+
+    .view-profile-container .share-button {
+      text-align: center
+    }
+
+    .view-profile-container .share-button:not(:first-child) {
+      margin-left: .5rem
+    }
+
+    .card-section {
+      margin-bottom: 1rem;
+      flex-flow: row wrap
+    }
+
+    .card-section a:link,
+    .card-section a:visited {
+      text-decoration: none;
+      color: inherit
+    }
+
+    .card-section a:active,
+    .card-section a:hover {
+      text-decoration: underline
+    }
+
+    .card-section .section-label-col {
+      flex-basis: 150px
+    }
+
+    .card-section .section-icon {
+      margin-right: 1rem
+    }
+
+    .card-section .section-value-col {
+      flex-grow: 1;
+      margin-left: calc(40px + 1rem)
+    }
+
+    .card-section .section-value-col.truncate {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap
+    }
+
+    .card-section .section-value-col.wrap {
+      word-break: break-word
+    }
+
+    .card-section .section-value {
+      vertical-align: text-top
+    }
+
+    .card-section .section-value>div {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap
+    }
+
+    .view-card-footer {
+      display: block;
+      font-size: .9em;
+      font-style: italic;
+      margin: 2rem 0 0;
+      padding: 20px;
+      text-align: center;
+      border-top: 1px solid #676767
+    }
+
+    .view-card-footer a {
+      font-style: normal
+    }
+
+    .address .address-entry:not(:last-child) {
+      margin-bottom: 15px
+    }
+  </style>
+</head>
+
+<body>
+  <div id="main-content">
+    <div id="view-card-container">
+      <div class="body" style="">
+
+        <div class="vcard-header p-2">
+        </div>
+
+        <div class="p-2">
+          <div class="view-profile-container d-sm-flex">
+            <div class="flex-grow-1">
+              <div>
+                <img class="border rounded" src="ahsan-min-min.jpg" alt="" width="200px">
+              </div>
+              <div>
+                <h1>Ahsan Ahmed</h1>
+              </div>
+              <div class="view-profile-main">
+                <h4>Software Engineer</h4>
+                <h5>@Flight Expert</h5>
+                <div class="brand">
+                  <a target="_blank" href="https://www.github.com/ahsanjuly29" class="brand-icon btn btn-outline-dark">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github"
+                      class="svg-inline--fa fa-github fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 496 512">
+                      <path fill="currentColor"
+                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                      </path>
+                    </svg>
+                  </a>
+                  <a target="_blank" href="https://www.facebook.com/ceoahsanahmed/"
+                    class="brand-icon btn btn-outline-dark"><svg aria-hidden="true" focusable="false" data-prefix="fab"
+                      data-icon="facebook-f" class="svg-inline--fa fa-facebook-f fa-w-10 " role="img"
+                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                      <path fill="currentColor"
+                        d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                      </path>
+                    </svg></a><a target="_blank" href="https://www.instagram.com/s.engineer.ahsan/?hl=en"
+                    class="brand-icon btn btn-outline-dark"><svg aria-hidden="true" focusable="false" data-prefix="fab"
+                      data-icon="instagram" class="svg-inline--fa fa-instagram fa-w-14 " role="img"
+                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                      <path fill="currentColor"
+                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                      </path>
+                    </svg></a>
+                </div>
+              </div>
+            </div>
+            <div class="view-actions">
+              <div class="d-flex">
+                <div class="share-button">
+                  <a target="_blank" href="ahsan.vcf" class="btn btn-outline-dark" id="save_vcf">
+                    <img
+                      src="https://www.stouffvilletoyota.com/wp-content/uploads/2019/08/download-logo-png-image-77292.png"
+                      alt="" width="20px;">
+                  </a>
+                  <p>Save</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <div class="phone card-section d-sm-flex">
+              <div class="section-label-col d-flex">
+                <div class="section-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="phone"
+                    class="svg-inline--fa fa-phone fa-w-16 fa-fw fa-2x " role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512">
+                    <path fill="currentColor"
+                      d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z">
+                    </path>
+                  </svg></div>
+                <div class="section-label">Phones</div>
+              </div>
+              <div class="section-value-col truncate">
+                <div class="section-value">
+                  <div><a target="_blank" href="tel:01777519553">01777519553</a></div>
+                  <div><a target="_blank" href="tel:01580314701">01580314701</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="email d-sm-flex card-section">
+              <div class="section-label-col d-flex">
+                <div class="section-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                    data-icon="envelope" class="svg-inline--fa fa-envelope fa-w-16 fa-fw fa-2x " role="img"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="currentColor"
+                      d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z">
+                    </path>
+                  </svg></div>
+                <div class="section-label">Emails</div>
+              </div>
+              <div class="section-value-col truncate">
+                <div class="section-value">
+                  <div><a target="_blank" href="mailto:ahsan.july29@gmail.com">ahsan.july29@gmail.com</a></div>
+                  <div><a target="_blank" href="mailto:aa91898@gmail.com">aa91898@gmail.com</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="urls d-sm-flex card-section">
+              <div class="section-label-col d-flex">
+                <div class="section-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="globe"
+                    class="svg-inline--fa fa-globe fa-w-16 fa-fw fa-2x " role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 496 512">
+                    <path fill="currentColor"
+                      d="M336.5 160C322 70.7 287.8 8 248 8s-74 62.7-88.5 152h177zM152 256c0 22.2 1.2 43.5 3.3 64h185.3c2.1-20.5 3.3-41.8 3.3-64s-1.2-43.5-3.3-64H155.3c-2.1 20.5-3.3 41.8-3.3 64zm324.7-96c-28.6-67.9-86.5-120.4-158-141.6 24.4 33.8 41.2 84.7 50 141.6h108zM177.2 18.4C105.8 39.6 47.8 92.1 19.3 160h108c8.7-56.9 25.5-107.8 49.9-141.6zM487.4 192H372.7c2.1 21 3.3 42.5 3.3 64s-1.2 43-3.3 64h114.6c5.5-20.5 8.6-41.8 8.6-64s-3.1-43.5-8.5-64zM120 256c0-21.5 1.2-43 3.3-64H8.6C3.2 212.5 0 233.8 0 256s3.2 43.5 8.6 64h114.6c-2-21-3.2-42.5-3.2-64zm39.5 96c14.5 89.3 48.7 152 88.5 152s74-62.7 88.5-152h-177zm159.3 141.6c71.4-21.2 129.4-73.7 158-141.6h-108c-8.8 56.9-25.6 107.8-50 141.6zM19.3 352c28.6 67.9 86.5 120.4 158 141.6-24.4-33.8-41.2-84.7-50-141.6h-108z">
+                    </path>
+                  </svg></div>
+                <div class="section-label">Website</div>
+              </div>
+              <div class="section-value-col truncate">
+                <div class="section-value">
+                  <div><a target="_blank" href="https://wa.me/qr/6NQ2CQ37OLZSI1">https://wa.me/qr/6NQ2CQ37OLZSI1</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="address d-sm-flex card-section">
+              <div class="section-label-col d-flex">
+                <div class="section-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                    data-icon="map-marked-alt" class="svg-inline--fa fa-map-marked-alt fa-w-18 fa-fw fa-2x " role="img"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                    <path fill="currentColor"
+                      d="M288 0c-69.59 0-126 56.41-126 126 0 56.26 82.35 158.8 113.9 196.02 6.39 7.54 17.82 7.54 24.2 0C331.65 284.8 414 182.26 414 126 414 56.41 357.59 0 288 0zm0 168c-23.2 0-42-18.8-42-42s18.8-42 42-42 42 18.8 42 42-18.8 42-42 42zM20.12 215.95A32.006 32.006 0 0 0 0 245.66v250.32c0 11.32 11.43 19.06 21.94 14.86L160 448V214.92c-8.84-15.98-16.07-31.54-21.25-46.42L20.12 215.95zM288 359.67c-14.07 0-27.38-6.18-36.51-16.96-19.66-23.2-40.57-49.62-59.49-76.72v182l192 64V266c-18.92 27.09-39.82 53.52-59.49 76.72-9.13 10.77-22.44 16.95-36.51 16.95zm266.06-198.51L416 224v288l139.88-55.95A31.996 31.996 0 0 0 576 426.34V176.02c0-11.32-11.43-19.06-21.94-14.86z">
+                    </path>
+                  </svg></div>
+                <div class="section-label">Address</div>
+              </div>
+              <div class="section-value-col truncate">
+                <div class="section-value">
+                  <div class="address-entry">Ahsan <br>1<br>1<br>Dhaka<br>Bangladesh<span>,&nbsp;</span>1100</div>
+                </div>
+              </div>
+            </div>
+            <div class="birthday d-sm-flex card-section">
+              <div class="section-label-col d-flex">
+                <div class="section-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                    data-icon="birthday-cake" class="svg-inline--fa fa-birthday-cake fa-w-14 fa-fw fa-2x " role="img"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor"
+                      d="M448 384c-28.02 0-31.26-32-74.5-32-43.43 0-46.825 32-74.75 32-27.695 0-31.454-32-74.75-32-42.842 0-47.218 32-74.5 32-28.148 0-31.202-32-74.75-32-43.547 0-46.653 32-74.75 32v-80c0-26.5 21.5-48 48-48h16V112h64v144h64V112h64v144h64V112h64v144h16c26.5 0 48 21.5 48 48v80zm0 128H0v-96c43.356 0 46.767-32 74.75-32 27.951 0 31.253 32 74.75 32 42.843 0 47.217-32 74.5-32 28.148 0 31.201 32 74.75 32 43.357 0 46.767-32 74.75-32 27.488 0 31.252 32 74.5 32v96zM96 96c-17.75 0-32-14.25-32-32 0-31 32-23 32-64 12 0 32 29.5 32 56s-14.25 40-32 40zm128 0c-17.75 0-32-14.25-32-32 0-31 32-23 32-64 12 0 32 29.5 32 56s-14.25 40-32 40zm128 0c-17.75 0-32-14.25-32-32 0-31 32-23 32-64 12 0 32 29.5 32 56s-14.25 40-32 40z">
+                    </path>
+                  </svg></div>
+                <div class="section-label">Birthday</div>
+              </div>
+              <div class="section-value-col truncate">
+                <div class="section-value">29-07-1997</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="view-card-footer"></div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script>
+
+  window.onload = function () {
+    document.getElementById("save_vcf").click();
+  };
+
+  // $(document).ready(function () {
+  //   $("#").click();
+  // });
+</script>
+
+</html>
