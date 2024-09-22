@@ -2,6 +2,10 @@
 
 This repository contains the code for my personal CV website, built using HTML and CSS. It showcases my professional experience, education, skills, and personal projects in a simple, responsive, and elegant design.
 
+## Preview
+
+![CV Outlook](image/cv-screenshot.png)
+
 ## Features
 
 - **Personal Information**: Basic details like name, contact information, and a short bio.
