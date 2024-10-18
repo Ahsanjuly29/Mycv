@@ -239,7 +239,7 @@
 
         p {
             margin-top: 0;
-            margin-bottom: 1rem
+            margin-bottom: 0.3rem;
         }
 
         abbr[title] {
@@ -2586,7 +2586,7 @@
             display: block;
             padding: 4px;
             margin-top: 5%;
-            margin-bottom: 20px;
+            margin-bottom: 0px;
             line-height: 1.42857143;
             background-color: #a2849e4f;
             background-color: #008d2b52;
@@ -12733,8 +12733,7 @@
 
         li,
         a,
-        p,
-        span {
+        p {
             font-size: 11.5px;
             line-height: 1.2rem;
         }
@@ -12805,15 +12804,19 @@
         }
 
         .work-experience {
-            margin: 10px;
+            margin: 10px 0px;
+        }
+
+        .work-experience ul:first-child {
+            list-style: none;
+            margin-left: 0px;
+            padding-left: 0px;
         }
 
         .caption a,
         .caption p,
-        .caption span,
         .education p,
         .work-experience p,
-        .work-experience span,
         .work-experience li,
         .work-experience a {
             font-size: 13px;
@@ -12874,7 +12877,7 @@
         }
 
         .work-experience ul {
-            padding-left: 20px;
+            padding-left: 15px;
         }
 
         .work-experience .experience-list {
@@ -12883,6 +12886,10 @@
 
         .experience-list .list {
             font-size: 14px;
+        }
+
+        .list {
+            font-weight: 600;
         }
 
         * {
@@ -12917,9 +12924,7 @@
                                     -
                                 </span>
                                 Software Engineer with(<span id="job_experience_year"></span>)years of
-                                Experience in developing Quality Software Solutions. able to work for an encouraging and
-                                stable company that will assist me in developing, improving, and obtaining the necessary
-                                skills in order to be come the best engineer Possible.
+                                Experience in developing Quality Software Solutions.
                             </p>
                         </div>
                         <div class="education row">
@@ -12986,7 +12991,7 @@
                                     <ul class="portfolio-ul">
                                         <li class="portfolio-li">
                                             <p>
-                                                <a href="">Creative IT(2019)(5 months)</a>
+                                                <a href="#">Creative IT(2019)(5 months)</a>
                                                 <span class="d-block">
                                                     subject : Web Application Development(Laravel)
                                                 </span>
@@ -12994,7 +12999,7 @@
                                         </li>
                                         <li>
                                             <p>
-                                                <a href="">NASSCOM Certification 2017 Learning From LICT Project (6
+                                                <a href="#">NASSCOM Certification 2017 Learning From LICT Project (6
                                                     months)</a>
                                                 <span class="d-block">
                                                     subject : Web Design & Development Course (html, css, PHP)
@@ -13105,19 +13110,6 @@
                                             </span>
                                         </a>
                                     </p>
-                                    <div class="onlyPrint">
-                                        <p>
-                                            CV :
-                                        </p>
-                                        <ul>
-                                            <li>
-                                                <a href="https://ahsanjuly29.github.io/Mycv/"
-                                                    target="_blank">https://ahsanjuly29.github.io/Mycv/</span>
-                                                    copy this. if link doesn't work
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -13136,11 +13128,22 @@
                     <div class="work-experience">
                         <ul>
                             <li class="experience-list">
-                                <h5><b>4. Software Engineer</b></h5>
-                                <p><b>
-                                        <span class="text-success"> Freelancing/Outsourcing </span>| Oct, 2023 -
-                                        Present</b></p>
-                                <p class="list">
+                                <div class="alert alert-success m-0 py-1">
+                                    <h5>
+                                        <b>
+                                            <span class="text-success">
+                                                Freelancing/Outsourcing
+                                            </span>
+                                        </b>
+                                    </h5>
+                                    <p>
+                                        <b>Software Engineer</b>
+                                    </p>
+                                    <p>
+                                        Home - Dhaka| Oct, 2023 - Present
+                                    </p>
+                                </div>
+                                <p class="list ms-3">
                                     Responsibilities:
                                 </p>
                                 <ul>
@@ -13170,22 +13173,28 @@
                     <div class="work-experience">
                         <ul>
                             <li class="experience-list">
-                                <h5><b>4.1 Software Engineer</b></h5>
-                                <p>
-                                    <b>
-                                        <span class="text-success"> Nexoda(BDRen) </span>| March, 2024 -
-                                        june(Contract),
-                                        2024.
-                                    </b>
-                                </p>
-                                <p class="list">
-                                    Responsibilities(
-                                    <a href="https://filesender.bdren.net.bd/en/login">
-                                        File Sharing Software
-                                    </a>
-                                    ):
+                                <div class="alert alert-success m-0 py-1">
+                                    <h5>
+                                        <b>
+                                            <span class="text-success"> Nexoda(BDRen) </span>
+                                        </b>
+                                    </h5>
+                                    <p>
+                                        <b>Software Engineer(Contract)</b>
+                                    </p>
+                                    <p>
+                                        Dhaka| March, 2024 - june, 2024
+                                    </p>
+                                </div>
+                                <p class="list ms-3">
+                                    Responsibilities:
                                 </p>
                                 <ul>
+                                    <li>
+                                        <a href="https://filesender.bdren.net.bd/en/login">
+                                            File Sharing Software
+                                        </a>
+                                    </li>
                                     <li>
                                         Participating in the design and planning of software solutions to the
                                         requirements specification
@@ -13210,14 +13219,27 @@
                     <div class="work-experience">
                         <ul>
                             <li class="experience-list">
-                                <h5><b>3. Software Engineer</b></h5>
-                                <p><b>
-                                        <span class="text-danger">Flight Expert</span>|
-                                        City-Center, Motijheel, Dhaka| Apr, 2022 - Sept, 2023.</b></p>
-                                <p class="list">
-                                    Responsibilities(OTA & CMS Software Development):
+                                <div class="alert alert-success m-0 py-1">
+                                    <h5>
+                                        <b>
+                                            <span class="text-danger">Flight Expert</span>
+                                        </b>
+                                    </h5>
+                                    <p>
+                                        <b> Software Engineer</b>
+                                    </p>
+                                    <p>
+                                        City-Center, Motijheel, Dhaka| Apr, 2022 - Sept, 2023.
+                                    </p>
+                                </div>
+                                <p class="list ms-3">
+                                    Responsibilities:
                                 </p>
                                 <ul>
+                                    <li>
+                                        OTA & CMS Software Development
+                                        </a>
+                                    </li>
                                     <li>
                                         Reporting directly to the Software Engineering Team Lead and raising all
                                         concerns or technical issues before developing solutions.
@@ -13243,18 +13265,29 @@
                     <div class="work-experience">
                         <ul>
                             <li class="experience-list">
-                                <h5><b>2. Software Engineer</b></h5>
-                                <p>
-                                    <b>
-                                        <span class="text-danger">Roots</span>-<span class="text-warning">Edu</span>|
-                                        Uttara,
-                                        Dhaka| Mar, 2021 - Aug, 2021.
-                                    </b>
-                                </p>
-                                <p class="list">
-                                    Responsibilities(Ed-Tech & Admin Panel Development) :
+                                <div class="alert alert-success m-0 py-1">
+                                    <h5>
+                                        <b>
+                                            <span class="text-warning">R</span><span
+                                                class="text-primary">oots-Edu</span>
+                                        </b>
+                                    </h5>
+                                    <p>
+                                        <b>Software Engineer</b>
+                                    </p>
+                                    <p>
+                                        Uttara, Dhaka| Mar, 2021 - Aug, 2021.
+                                    </p>
+                                </div>
+                                <p class="list ms-3">
+                                    Responsibilities:
                                 </p>
                                 <ul>
+                                    <li>
+                                        <a href="#">
+                                            Ed-Tech & Admin Panel Development
+                                        </a>
+                                    </li>
                                     <li>
                                         Rest API by Laravel for Android.
                                     </li>
@@ -13267,18 +13300,33 @@
                     <div class="work-experience">
                         <ul>
                             <li class="experience-list">
-                                <h5><b>1. Software Engineer(JR.)</b></h5>
-                                <p>
-                                    <b>
-                                        <span class="text-warning">
-                                            Smart Software Ltd
-                                        </span>| Panathapath, Dhaka| Aug, 2020 – Mar, 2021.
-                                </p>
-                                </b>
-                                <p class="list">
-                                    Responsibilities(Various Software Development) :
+                                <div class="alert alert-success m-0 py-1">
+                                    <h5>
+                                        <b>
+                                            <span class="text-primary">
+                                                Smart
+                                            </span>
+                                            <span class="text-warning">
+                                                Software Ltd
+                                            </span>
+                                        </b>
+                                    </h5>
+                                    <p>
+                                        <b> Software Engineer(JR.)</b>
+                                    </p>
+                                    <p>
+                                        Panathapath, Dhaka| Aug, 2020 – Mar, 2021.
+                                    </p>
+                                </div>
+                                <p class="list ms-3">
+                                    Responsibilities:
                                 </p>
                                 <ul>
+                                    <li>
+                                        <a href="#">
+                                            Various Software Development
+                                        </a>
+                                    </li>
                                     <li>
                                         Working to a schedule designed around these factors and updating the client
                                         of
