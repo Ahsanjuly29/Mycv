@@ -26,20 +26,11 @@ You can view the live version of the CV by cloning the repository and opening `i
 
 ### Steps to Run Locally
 
-1. Clone the repository:
+1. Clone and paste on Browser or <a href="https://ahsanjuly29.github.io/Mycv/" target="_blank">click here</a>:
    ```bash
-   git clone https://github.com/Ahsanjuly29/Mycv.git
+   https://ahsanjuly29.github.io/Mycv/
    ```
-2. Navigate to the project directory:
-   ```bash
-   cd Mycv
-   ```
-3. Open `index.html` in your preferred browser.
-
-## Contributing
-
-If you would like to contribute or improve the design or structure of this CV, feel free to fork the repository and submit a pull request.
-
+      
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
