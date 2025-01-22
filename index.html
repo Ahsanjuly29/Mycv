@@ -131,6 +131,11 @@
             <div class="form-group text-center">
               <button class="btn btn-primary" onclick="makeCode()">Generate QR Code</button>
             </div>
+
+            <!-- Download Button -->
+            <div class="form-group text-center" style="margin-top: 20px;">
+              <button class="btn btn-success" onclick="downloadQRCode()">Download QR Code</button>
+            </div>
           </div>
         </div>
       </div>
@@ -165,10 +170,23 @@
       var elText = document.getElementById("url");
       if (!elText.value) {
         alert("Please enter a valid URL");
-        elText.focus();
-        return;
+        return; // Stop further code execution if URL is empty
       }
       qrcode.makeCode(elText.value);
+    }
+
+    // Function to download the QR code as an image
+    function downloadQRCode() {
+      var canvas = document.querySelector("#qrcode canvas");
+      if (!canvas) {
+        alert("Please generate a QR code first.");
+        return;
+      }
+      var imageUrl = canvas.toDataURL("image/png");
+      var link = document.createElement("a");
+      link.href = imageUrl;
+      link.download = "qrcode.png";  // Set the default file name
+      link.click();
     }
 
     $("#url")
