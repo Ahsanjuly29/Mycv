@@ -1,7 +1,7 @@
 # ⚡ Instant QR Generator(LIVE)
 A fast, lightweight, and browser-based tool to generate high-quality QR codes for your URLs. No data collection, no external servers—just pure speed.
 
-🔗 **Live Demo:** [Try it here][(https://ahsanjuly29.github.io/qrBuilder/)](https://ahsanjuly29.github.io/QRCodeGenerator/)
+🔗 **Live Demo:** [Try it here](https://ahsanjuly29.github.io/QRCodeGenerator/)
 
 ---
 
